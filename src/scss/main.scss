@@ -1,5 +1,5 @@
 @import "~normalize.css";
-
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap');
 @import "_variables";
 
 html {
@@ -15,11 +15,12 @@ html {
 body {
   background: $background-red;
   color: #fff;
+  font-family: 'Open Sans', sans-serif;
 }
 
 .card {
   display: block;
-  &__content {
+  &__discription {
     background-color: blue;
   }
   &__photo {
@@ -37,4 +38,37 @@ body {
   margin: 0;
   position: absolute;
   padding: 8px;
+}
+
+.section {
+  width: 288px;
+  margin: 36px auto;
+  &__content {
+    font-size: 14px;
+    line-height: 20px;
+    margin: 0 auto 24px auto;
+  }
+  &__title {
+    font-size: 30px;
+    margin-top: 0;
+    margin-bottom: 36px;
+  }
+}
+
+.link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  height: 45px;
+  border-radius: 40px;
+  border: 2px solid white;
+  margin: 0 auto;
+  &__button {
+    text-decoration: none;
+    color: white;
+    font-size: 22px;
+    font-weight: 600;
+    
+  }
 }
