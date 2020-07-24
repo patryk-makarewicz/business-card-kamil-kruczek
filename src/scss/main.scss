@@ -2,12 +2,39 @@
 
 @import "_variables";
 
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
 
 body {
   background: $background-red;
   color: #fff;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  min-height: 100vh;
+}
+
+.card {
+  display: block;
+  &__content {
+    background-color: blue;
+  }
+  &__photo {
+    background-color: green;
+    max-width: 320px;
+
+  }
+}
+
+.photo {
+  width: 100vw;
+}
+
+.logo {
+  margin: 0;
+  position: absolute;
+  padding: 8px;
 }
