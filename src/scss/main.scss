@@ -20,14 +20,6 @@ body {
 
 .card {
   display: block;
-  &__discription {
-    background-color: blue;
-  }
-  &__photo {
-    background-color: green;
-    max-width: 320px;
-
-  }
 }
 
 .photo {
@@ -46,7 +38,7 @@ body {
   &__content {
     font-size: 14px;
     line-height: 20px;
-    margin: 0 auto 24px auto;
+    margin: 0 auto 36px auto;
   }
   &__title {
     font-size: 30px;
@@ -62,13 +54,29 @@ body {
   width: 200px;
   height: 45px;
   border-radius: 40px;
-  border: 2px solid white;
-  margin: 0 auto;
+  border: 2px solid #ffffff;
+  margin: 0 auto 36px auto;
   &__button {
     text-decoration: none;
     color: white;
     font-size: 22px;
     font-weight: 600;
+  }
+}
+
+.contact {
+  display: flex;
+  width: 225px;
+  margin: 0 auto 24px auto;
+  &__link {
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+    line-height: 20px;
+  }
+  &__fb {
+    display: flex;
+    justify-content: center;
     
   }
 }
