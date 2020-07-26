@@ -1,5 +1,5 @@
 @import "~normalize.css";
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap");
 @import "_variables";
 
 html {
@@ -13,17 +13,28 @@ html {
 }
 
 body {
-  background: $background-red;
-  color: #fff;
-  font-family: 'Open Sans', sans-serif;
+  background: rgb(255, 255, 255);
+  color: #333;
+  font-family: "Open Sans", sans-serif;
 }
 
 .card {
   display: block;
-}
-
-.photo {
-  width: 100vw;
+  &__photo {
+    background: url(../assets/img/Photo.jpg);
+    height: 65vh;
+    background-size: cover !important;
+    min-height: 100% !important;
+  }
+  &__discription {
+    background: rgb(255, 255, 255);
+    background: linear-gradient(
+      180deg,
+      rgba(255, 255, 255, 1) 0%,
+      rgba(241, 241, 249, 1) 50%,
+      rgba(255, 255, 255, 1) 100%
+    );
+  }
 }
 
 .logo {
@@ -33,7 +44,9 @@ body {
 }
 
 .section {
-  width: 288px;
+  min-width: 288px;
+  max-width: 590px;
+  padding: 16px;
   margin: 36px auto;
   &__content {
     font-size: 14px;
@@ -50,33 +63,41 @@ body {
 .link {
   display: flex;
   justify-content: center;
-  align-items: center;
-  width: 200px;
-  height: 45px;
-  border-radius: 40px;
-  border: 2px solid #ffffff;
   margin: 0 auto 36px auto;
   &__button {
+    display: inline-block;
+    width: 235px;
+    height: 45px;
+    border-radius: 40px;
+    border: 2px solid $red;
+    text-align: center;
     text-decoration: none;
-    color: white;
+    color: $red;
     font-size: 22px;
     font-weight: 600;
+    align-items: center;
+    padding: 8px;
+    margin: auto;
+    &:hover {
+      color: white;
+      background-color: $red;
+    }
   }
 }
 
 .contact {
   display: flex;
-  width: 225px;
+  width: 235px;
   margin: 0 auto 24px auto;
   &__link {
     text-decoration: none;
-    color: white;
+    color: #333;
     font-size: 14px;
-    line-height: 20px;
+    line-height: 22px;
+    margin-left: 10px;
   }
   &__fb {
     display: flex;
     justify-content: center;
-    
   }
 }
