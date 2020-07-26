@@ -53,6 +53,52 @@ body {
   }
 }
 
+.contact {
+  display: flex;
+  width: 235px;
+  margin: 0 auto 24px auto;
+  &__link {
+    text-decoration: none;
+    color: #333;
+    font-size: 14px;
+    line-height: 22px;
+    margin-left: 10px;
+    @media screen and (min-width: 1440px) {
+      font-size: 16px;
+      line-height: 22px;
+    }
+  }
+  &__fb {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+.link {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto 36px auto;
+  &__button {
+    display: inline-block;
+    width: 235px;
+    height: 45px;
+    border-radius: 40px;
+    border: 2px solid $red;
+    text-align: center;
+    text-decoration: none;
+    color: $red;
+    font-size: 22px;
+    font-weight: 600;
+    align-items: center;
+    padding: 8px;
+    margin: auto;
+    &:hover {
+      color: white;
+      background-color: $red;
+    }
+  }
+}
+
 .logo {
   margin: 0;
   position: absolute;
@@ -104,51 +150,5 @@ body {
     @media screen and (min-width: 1440px) {
       font-size: 34px;
     }
-  }
-}
-
-.link {
-  display: flex;
-  justify-content: center;
-  margin: 0 auto 36px auto;
-  &__button {
-    display: inline-block;
-    width: 235px;
-    height: 45px;
-    border-radius: 40px;
-    border: 2px solid $red;
-    text-align: center;
-    text-decoration: none;
-    color: $red;
-    font-size: 22px;
-    font-weight: 600;
-    align-items: center;
-    padding: 8px;
-    margin: auto;
-    &:hover {
-      color: white;
-      background-color: $red;
-    }
-  }
-}
-
-.contact {
-  display: flex;
-  width: 235px;
-  margin: 0 auto 24px auto;
-  &__link {
-    text-decoration: none;
-    color: #333;
-    font-size: 14px;
-    line-height: 22px;
-    margin-left: 10px;
-    @media screen and (min-width: 1440px) {
-      font-size: 16px;
-      line-height: 22px;
-    }
-  }
-  &__fb {
-    display: flex;
-    justify-content: center;
   }
 }
