@@ -20,11 +20,23 @@ body {
 
 .card {
   display: block;
+  min-height: 100%;
+  @media screen and (min-width: 690px) {
+    display: flex;
+    flex-direction: row;
+  }
   &__photo {
     background: url(../assets/img/Photo.jpg);
     height: 65vh;
     background-size: cover !important;
     min-height: 100% !important;
+    @media screen and (min-width: 690px) {
+      width: 50vw;
+      height: 100vh;
+      background: url(../assets/img/Photo.jpg) no-repeat center center;
+      background-size: cover !important;
+      min-height: 540px !important;
+    }
   }
   &__discription {
     background: rgb(255, 255, 255);
@@ -34,6 +46,10 @@ body {
       rgba(241, 241, 249, 1) 50%,
       rgba(255, 255, 255, 1) 100%
     );
+    @media screen and (min-width: 690px) {
+      width: 50vw;
+      min-height: 100%;
+    }
   }
 }
 
@@ -48,6 +64,16 @@ body {
   max-width: 590px;
   padding: 16px;
   margin: 36px auto;
+  @media screen and (min-width: 690px) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50vw;
+    height: 100%;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
   &__content {
     font-size: 14px;
     line-height: 20px;
