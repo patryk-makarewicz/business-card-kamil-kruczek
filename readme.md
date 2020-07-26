@@ -2,7 +2,7 @@
 
 # General info
 
-This is a business card of Kamil Kruczek the owner of FCL.
+This is a business card of Kamil Kruczek the owner of FLC.
 
 FLC Foreign Language Centre - The best language center.
 
