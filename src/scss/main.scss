@@ -13,8 +13,8 @@ html {
 }
 
 body {
-  background: rgb(255, 255, 255);
-  color: #333;
+  background: rgb(221, 7, 65);
+  color: white;
   font-family: "Open Sans", sans-serif;
 }
 
@@ -35,16 +35,16 @@ body {
       height: 100vh;
       background: url(../assets/img/Photo.jpg) no-repeat center center;
       background-size: cover !important;
-      min-height: 540px !important;
+      min-height: 640px !important;
     }
   }
   &__discription {
-    background: rgb(255, 255, 255);
+    background: rgb(221, 7, 65);
     background: linear-gradient(
-      180deg,
-      rgba(255, 255, 255, 1) 0%,
-      rgba(241, 241, 249, 1) 50%,
-      rgba(255, 255, 255, 1) 100%
+      45deg,
+      rgba(221, 7, 65, 1) 0%,
+      rgba(221, 7, 7, 0.7371323529411764) 50%,
+      rgba(221, 7, 65, 1) 100%
     );
     @media screen and (min-width: 690px) {
       width: 50vw;
@@ -68,16 +68,19 @@ body {
       line-height: 22px;
     }
   }
-  &__fb {
+  &__media {
     display: flex;
     justify-content: center;
+  }
+  &__media-link {
+    margin: 0 16px 28px 16px;
   }
 }
 
 .link {
   display: flex;
   justify-content: center;
-  margin: 0 auto 36px auto;
+  margin: 0 auto 30px auto;
   &__button {
     display: inline-block;
     width: 235px;
@@ -109,7 +112,7 @@ body {
   min-width: 288px;
   max-width: 590px;
   padding: 16px;
-  margin: 36px auto;
+  margin: 0 auto;
   @media screen and (min-width: 690px) {
     display: flex;
     flex-direction: column;
@@ -150,5 +153,18 @@ body {
     @media screen and (min-width: 1440px) {
       font-size: 34px;
     }
+  }
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  color: #333;
+  background-color: white;
+  padding: 8px;
+  border-radius: 4px;
+  box-shadow: 5px 4px 15px 0px #333;
+  &__content {
+    margin: 28px auto 36px auto;
   }
 }
