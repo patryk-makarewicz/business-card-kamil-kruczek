@@ -15,13 +15,3 @@ FLC Foreign Language Centre - The best language center.
 ## View:
 
 To watch click [here]
-
-## How to use it?
-
-Clone it to your computer, go to the project directory in console and type `npm install`.
-
-## Available script
-
-`npm run start` - runs development mode
-
-[here]: https://patryk-makarewicz.github.io/business-card-kamil-kruczek/
