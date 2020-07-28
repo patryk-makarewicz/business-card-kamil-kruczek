@@ -13,7 +13,7 @@ html {
 }
 
 body {
-  background: rgb(221, 7, 65);
+  background: #dd0741cc;
   color: #ffffff;
   font-family: "Open Sans", sans-serif;
 }
@@ -39,13 +39,7 @@ body {
     }
   }
   &__discription {
-    background: rgb(221, 7, 65);
-    background: linear-gradient(
-      45deg,
-      rgba(221, 7, 65, 1) 0%,
-      rgba(221, 7, 7, 0.7371323529411764) 50%,
-      rgba(221, 7, 65, 1) 100%
-    );
+    background: #dd0741cc;
     @media screen and (min-width: 690px) {
       width: 50vw;
       min-height: 100%;
